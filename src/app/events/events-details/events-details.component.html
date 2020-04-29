@@ -11,7 +11,6 @@
       <div class="col-md-6">
         <div><strong>Date:</strong> {{event?.date}}</div>
         <div><strong>Time:</strong> {{event?.time}}</div>
-        <div><strong>Price:</strong> ${{event?.price}}</div>
       </div>
       <div class="col-md-6">
         <address>
@@ -22,5 +21,14 @@
       </div>
     </div>
     <hr>
-    <session-list [sessions]="event?.sessions"></session-list>
+    <div class ="row">
+      <div class="col-md-2">
+        <h3 style="margin:0"> Sessions</h3>
+      </div>
+      <div class="col-md-2">
+        <a (click)="addSession()">Add Session</a>
+      </div>
+    </div>
+    <session-list *ngIf="!addMode" [sessions]="event?.sessions"></session-list>
+    <app-create-session *ngIf="addMode" (saveNewSession)="saveNewSession($event)" (cancelAddSession)="cancelAddSession()"></app-create-session>
   </div>

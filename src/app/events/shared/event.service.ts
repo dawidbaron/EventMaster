@@ -20,15 +20,18 @@ export class EventService {
       event.session = []
       EVENTS.push(event)
     }
+    updateEvent(event){
+      let index = EVENTS.findIndex(x=> x.id = event.id)
+      EVENTS[index] = event
+    }
 }
 const EVENTS:IEvent[] = [
     {
       id: 1,
-      name: 'Kasia Herbut - live on stage',
+      name: 'Tommorowland',
       date: new Date ('09/09/2020'),
       time: '10:00 am',
-      price: 199,
-      imageUrl: '/assets/Images/angularconnect-shield.png',
+      imageUrl: '/assets/Images/tommorowland.jpg',
       location: {
         address: 'Puławska 3',
         city: 'Warsaw',
@@ -37,132 +40,99 @@ const EVENTS:IEvent[] = [
       sessions: [
         {
           id: 1,
-          name: "Using Angular 4 Pipes",
-          presenter: "Peter Bacon Darwin",
-          duration: 1,
-          level: "Intermediate",
-          abstract: `Learn all about the new pipes in Angular 4, both 
-          how to write them, and how to get the new AI CLI to write 
-          them for you. Given by the famous PBD, president of Angular 
-          University (formerly Oxford University)`,
+          name: "All days 09-11/09/2020",
+          presenter: "Martin Garrix, David Guetta, Meduza, Tyga, The Weekend, Hardwell,Travis Scott, Armin van Buuren, Afrojack",
+          price: 500,
+          duration:3,
+          abstract: `Spend the festival listening to all the performers and save the price! 
+          There are competitions for this type of tickets!`,
           voters: ['bradgreen', 'igorminar', 'martinfowler']
         },
         {
           id: 2,
-          name: "Getting the most out of your dev team",
-          presenter: "Jeff Cross",
+          name: "First Day 09/09/2020",
+          presenter: "Martin Garrix, David Guetta, Meduza",
           duration: 1,
-          level: "Intermediate",
-          abstract: `We all know that our dev teams work hard, but with 
-          the right management they can be even more productive, without 
-          overworking them. In this session I'll show you how to get the 
-          best results from the talent you already have on staff.`,
+          price: 200,
+          abstract: `Spend one day with three the best Dj-s on the World!`,
           voters: ['johnpapa', 'bradgreen', 'igorminar', 'martinfowler']
         },
         {
           id: 3,
-          name: "Angular 4 Performance Metrics",
-          presenter: "Rob Wormald",
-          duration: 2,
-          level: "Advanced",
-          abstract: `Angular 4 Performance is hot. In this session, we'll see 
-          how Angular gets such great performance by preloading data on 
-          your users devices before they even hit your site using the 
-          new predictive algorithms and thought reading software 
-          built into Angular 4.`,
+          name: "Second Day 10/09/2020",
+          presenter: "Tyga, The Weekend, Hardwell",
+          duration: 1,
+          price:200,
+          abstract: `Spend one day with three the best Dj-s on the World!`,
           voters: []
         },
         {
           id: 4,
-          name: "Angular 5 Look Ahead",
-          presenter: "Brad Green",
-          duration: 2,
-          level: "Advanced",
-          abstract: `Even though Angular 5 is still 6 years away, we all want 
-          to know all about it so that we can spend endless hours in meetings 
-          debating if we should use Angular 4 or not. This talk will look at 
-          Angular 6 even though no code has yet been written for it. We'll 
-          look at what it might do, and how to convince your manager to 
-          hold off on any new apps until it's released`,
+          name: "Third Day 11/09/2020",
+          presenter: "Travis Scott, Armin van Buuren, Afrojack",
+          duration: 1,
+          price:200,
+          abstract: `Spend one day with three the best Dj-s on the World!`,
           voters: []
-        },
-        {
-          id: 5,
-          name: "Basics of Angular 4",
-          presenter: "John Papa",
-          duration: 2,
-          level: "Beginner",
-          abstract: `It's time to learn the basics of Angular 4. This talk 
-          will give you everything you need to know about Angular 4 to 
-          get started with it today and be building UI's for your self 
-          driving cars and butler-bots in no time.`,
-          voters: ['bradgreen', 'igorminar']
         }
       ]
     },
     {
       id: 2,
-      name: 'Turniej CS:GO Online',
+      name: 'Online Lessons in LessonSchool',
       date: new Date ('04/10/2020'),
       time: '9:00 am',
-      price: 30,
-      imageUrl: '/assets/Images/ng-nl.png',
-      onlineUrl:'http://ng-nl.org',
+      imageUrl: '/assets/Images/e-learning.jpg',
+      onlineUrl:'http://lessonschool.org',
       sessions: [
         {
           id: 1,
-          name: "Testing Angular 4 Workshop",
-          presenter: "Pascal Precht & Christoph Bergdorf",
-          duration: 4,
-          level: "Beginner",
-          abstract: `In this 6 hour workshop you will learn not only how to test Angular 4, 
-          you will also learn how to make the most of your team's efforts. Other topics
-          will be convincing your manager that testing is a good idea, and using the new
-          protractor tool for end to end testing.`,
+          name: "Maths",
+          presenter: "Dawid Baron",
+          duration: 0.45,
+          price: 40,
+          abstract: `Online Lessons with a teacher who has been teaching for 3 years, 
+          studies information technology and loves children`,
           voters: ['bradgreen', 'igorminar']
         },
         {
           id: 2,
-          name: "Angular 4 and Firebase",
-          presenter: "David East",
-          duration: 3,
-          level: "Intermediate",
-          abstract: `In this workshop, David East will show you how to use Angular with the new
-          ultra-real-time 5D Firebase back end, hosting platform, and wine recommendation engine.`,
+          name: "English",
+          presenter: "Michael Brown",
+          duration: 1,
+          price: 50,
+          abstract: `Online Lessons with a teacher who has been teaching for 5 years, 
+          studies English on Oxford`,
           voters: ['bradgreen', 'igorminar', 'johnpapa']
         },
         {
           id: 3,
-          name: "Reading the Angular 4 Source",
-          presenter: "Patrick Stapleton",
-          duration: 2,
-          level: "Intermediate",
-          abstract: `Angular 4's source code may be over 25 million lines of code, but it's really 
-          a lot easier to read and understand then you may think. Patrick Stapleton will talk
-          about his secretes for keeping up with the changes, and navigating around the code.`,
+          name: "IT",
+          presenter: "Patrick Yoka",
+          duration: 1.5,
+          price: 60,
+          abstract: `Online Lessons with a teacher who has been teaching for 5 years, 
+          studies IT on Cambridge.`,
           voters: ['martinfowler']
         },
         {
           id: 4,
-          name: "Hail to the Lukas",
-          presenter: "Lukas Ruebbelke",
-          duration: 1,
-          level: "Beginner",
-          abstract: `In this session, Lukas will present the 
-          secret to being awesome, and how he became the President 
-          of the United States through his amazing programming skills, 
-          showing how you too can be success with just attitude.`, 
+          name: "Music",
+          presenter: "Lukas White",
+          duration: 1.5,
+          price: 80,
+          abstract: `Online Lessons with a teacher who has been teaching for 8 years, 
+          studied Music in Warsaw.`, 
           voters: ['bradgreen']
         },
       ]
     },
     {
       id: 3,
-      name: 'Legia Warszawa - Lech Poznań',
+      name: 'Fitness - Revital Gym',
       date: new Date ('05/05/2020'),
       time: '9:00 am',
-      price: 50,
-      imageUrl: '/assets/Images/ng-conf.png',
+      imageUrl: '/assets/Images/gym.jpg',
       location: {
         address: 'Łazienkowska 3',
         city: 'Warszawa',
@@ -171,80 +141,68 @@ const EVENTS:IEvent[] = [
       sessions: [
         {
           id: 1,
-          name: "How Elm Powers Angular 4",
-          presenter: "Murphy Randle",
-          duration: 2,
-          level: "Intermediate",
-          abstract: `We all know that Angular is written in Elm, but did you
-          know how the source code is really written? In this exciting look
-          into the internals of Angular 4, we'll see exactly how Elm powers
-          the framework, and what you can do to take advantage of this knowledge.`,
+          name: "Zumba",
+          presenter: "Kate Heron",
+          duration: 1,
+          price: 50,
+          abstract: `Zumba dance that will make you lose weight in the blink of an eye. 
+          A person with great experience will take care of your attitude!
+          dge.`,
           voters: ['bradgreen', 'martinfowler', 'igorminar']
         },
         {
           id: 2,
-          name: "Angular and React together",
+          name: "Grit Cardio",
           presenter: "Jamison Dance",
-          duration: 2,
-          level: "Intermediate",
-          abstract: `React v449.6 has just been released. Let's see how to use 
-          this new version with Angular to create even more impressive applications.`,
+          duration: 1.5,
+          price: 50,
+          abstract: `Grit Cardio dance that will make you lose weight in the blink of an eye. 
+          A person with great experience will take care of your attitude!
+          dge.`,
           voters: ['bradgreen', 'martinfowler']
         },
         {
           id: 3,
-          name: "Redux Woes",
-          presenter: "Rob Wormald",
-          duration: 1,
-          level: "Intermediate",
-          abstract: `Everyone is using Redux for everything from Angular to React to 
-          Excel macros, but you're still having trouble grasping it? We'll take a look
-          at how farmers use Redux when harvesting grain as a great introduction to 
-          this game changing technology.`,
+          name: "Kick Boxing",
+          presenter: "Bob Boxer",
+          duration:1,
+          price: 60,
+          abstract: `Kick Boxing dance that will make you lose weight in the blink of an eye. 
+          A person with great experience will take care of your attitude!
+          dge.`,
           voters: ['bradgreen', 'martinfowler', 'johnpapa']
         },
         {
           id: 4,
-          name: "ng-wat again!!",
+          name: "TBC & STRETCH",
           presenter: "Shai Reznik",
-          duration: 1,
-          level: "Beginner",
-          abstract: `Let's take a look at some of the stranger pieces of Angular 4,
-          including neural net nets, Android in Androids, and using pipes with actual pipes.`,
+          duration:1,
+          price: 60,
+          abstract: `TBC & STRETCH dance that will make you lose weight in the blink of an eye. 
+          A person with great experience will take care of your attitude!
+          dge.`,
           voters: ['bradgreen', 'martinfowler', 'igorminar', 'johnpapa']
         },
         {
           id: 5,
-          name: "Dressed for Success",
-          presenter: "Ward Bell",
-          duration: 2,
-          level: "Beginner",
-          abstract: `Being a developer in 2037 is about more than just writing bug-free code. 
-          You also have to look the part. In this amazing expose, Ward will talk you through
-          how to pick out the right clothes to make your coworkers and boss not only
-          respect you, but also want to be your buddy.`,
+          name: "Pilates",
+          presenter: "Bruce Walters",
+          duration:1,
+          price: 50,
+          abstract: `Pilates dance that will make you lose weight in the blink of an eye. 
+          A person with great experience will take care of your attitude!
+          dge.`,
           voters: ['bradgreen', 'martinfowler']
         },
-        {
-          id: 6,
-          name: "These aren't the directives you're looking for",
-          presenter: "John Papa",
-          duration: 2,
-          level: "Intermediate",
-          abstract: `Coinciding with the release of Star Wars Episode 18, this talk will show how
-          to use directives in your Angular 4 development while drawing lessons from the new movie,
-          featuring all your favorite characters like Han Solo's ghost and Darth Jar Jar.`,
-          voters: ['bradgreen', 'martinfowler']
-        },
+       
       ]
     },
     {
       id: 4,
-      name: 'Dawid Podsiadło - live on stage',
+      name: 'Theatres in Warsaw',
       date: new Date ('6/10/2020'),
       time: '8:00 am',
-      price: 150,
-      imageUrl: '/assets/Images/basic-shield.png',
+      imageUrl: '/assets/Images/teatr.jpg',
       location: {
         address: 'Prosta 1',
         city: 'Kraków ',
@@ -253,36 +211,47 @@ const EVENTS:IEvent[] = [
       sessions: [
         {
           id: 1,
-          name: "Diversity in Tech",
-          presenter: "Sir Dave Smith",
-          duration: 2,
-          level: "Beginner",
-          abstract: `Yes, we all work with cyborgs and androids and Martians, but 
-          we probably don't realize that sometimes our internal biases can make it difficult for
-          these well-designed coworkers to really feel at home coding alongside us. This talk will
-          look at things we can do to recognize our biases and counteract them.`,
+          name: "Metro",
+          presenter: "Theatre Buffo",
+          duration: 1.5,
+          price:100,
+          abstract: `„METRO”. Gdzieś między fikcją a rzeczywistością … 
+          Uliczni grajkowie, śpiewacy i tancerze wystawiają na podziemnych peronach metra spektakl dla pasażerów. 
+          Jego twórcą i animatorem jest Jan, dla którego metro jest domem, a underground – sposobem na życie.
+           Spektakl budzi sensację, a młodzi artyści otrzymują propozycję pracy w komercyjnym teatrze. 
+           To opowieść o marzeniach i rozczarowaniach, o pasji i zdradzie, o młodzieńczych ideałach i władzy pieniądza,
+            a przede wszystkim to historia romantycznej miłości.
+          `,
           voters: ['bradgreen', 'igorminar']
         },
         {
           id: 2,
-          name: "World Peace and Angular",
-          presenter: "US Secretary of State Zach Galifianakis",
+          name: "Danse Macabre",
+          presenter: "Theatre Roma",
           duration: 2,
-          level: "Beginner",
-          abstract: `Angular has been used in most of the major peace brokering that has
-          happened in the last decade, but there is still much we can do to remove all
-          war from the world, and Angular will be a key part of that effort.`,
+          price:70,
+          abstract: `„Danse Macabre”. Gdzieś między fikcją a rzeczywistością … 
+          Uliczni grajkowie, śpiewacy i tancerze wystawiają na podziemnych peronach metra spektakl dla pasażerów. 
+          Jego twórcą i animatorem jest Jan, dla którego metro jest domem, a underground – sposobem na życie.
+           Spektakl budzi sensację, a młodzi artyści otrzymują propozycję pracy w komercyjnym teatrze. 
+           To opowieść o marzeniach i rozczarowaniach, o pasji i zdradzie, o młodzieńczych ideałach i władzy pieniądza,
+            a przede wszystkim to historia romantycznej miłości.
+          `,
           voters: ['bradgreen', 'igorminar', 'johnpapa']
         },
         {
           id: 3,
-          name: "Using Angular with Androids",
-          presenter: "Dan Wahlin",
+          name: "Rave in the grave",
+          presenter: "Theatre Komedia",
           duration: 3,
-          level: "Advanced",
-          abstract: `Androids may do everything for us now, allowing us to spend all day playing 
-          the latest Destiny DLC, but we can still improve the massages they give and the handmade
-          brie they make using Angular 4. This session will show you how.`,
+          price:70,
+          abstract: `„Rave in the grave”. Gdzieś między fikcją a rzeczywistością … 
+          Uliczni grajkowie, śpiewacy i tancerze wystawiają na podziemnych peronach metra spektakl dla pasażerów. 
+          Jego twórcą i animatorem jest Jan, dla którego metro jest domem, a underground – sposobem na życie.
+           Spektakl budzi sensację, a młodzi artyści otrzymują propozycję pracy w komercyjnym teatrze. 
+           To opowieść o marzeniach i rozczarowaniach, o pasji i zdradzie, o młodzieńczych ideałach i władzy pieniądza,
+            a przede wszystkim to historia romantycznej miłości.
+          `,
           voters: ['igorminar', 'johnpapa']
         },
       ]
@@ -292,8 +261,7 @@ const EVENTS:IEvent[] = [
       name: 'Opener Festival',
       date: new Date ('2/7/2020'),
       time: '9:00 am',
-      price: 400.00,
-      imageUrl: '/assets/Images/ng-vegas.png',
+      imageUrl: '/assets/Images/opner.jpg',
       location: {
         address: 'Polna 2',
         city: 'Gdynia',
@@ -302,27 +270,40 @@ const EVENTS:IEvent[] = [
       sessions: [
         {
           id: 1,
-          name: "Gambling with Angular",
-          presenter: "John Papa",
-          duration: 1,
-          level: "Intermediate",
-          abstract: `No, this talk isn't about slot machines. We all know that 
-          Angular is used in most waiter-bots and coke vending machines, but
-          did you know that was also used to write the core engine in the majority
-          of voting machines? This talk will look at how all presidential elections
-          are now determined by Angular code.`,
-          voters: ['bradgreen', 'igorminar']
+          name: "All days 2-4/7/2020",
+          presenter: "Rihana, Beyonce, Tyga, The Weekend, Litlle Mix, Tymek, Quebonafide, Beyonce, Black Eyed Peas",
+          price: 500,
+          duration:3,
+          abstract: `Spend the festival listening to all the performers and save the price! 
+          There are competitions for this type of tickets!`,
+          voters: ['bradgreen', 'igorminar', 'martinfowler']
         },
         {
           id: 2,
-          name: "Angular 4 in 60ish Minutes",
-          presenter: "Dan Wahlin",
-          duration: 2,
-          level: "Beginner",
-          abstract: `Get the skinny on Angular 4 for anyone new to this great new technology.
-          Dan Wahlin will show you how you can get started with Angular in 60ish minutes, 
-          guaranteed!`,
-          voters: ['bradgreen', 'igorminar', 'johnpapa']
+          name: "First Day 02/09/2020",
+          presenter: "Rihana, Beyonce, Tyga",
+          duration: 1,
+          price: 200,
+          abstract: `Spend one day with three the best artist on the World!`,
+          voters: ['johnpapa', 'bradgreen', 'igorminar', 'martinfowler']
+        },
+        {
+          id: 3,
+          name: "Second Day 03/09/2020",
+          presenter: "The Weekend, Litlle Mix, Tymek,",
+          duration: 1,
+          price:200,
+          abstract: `Spend one day with three the best artist on the World!`,
+          voters: []
+        },
+        {
+          id: 4,
+          name: "Third Day 04/09/2020",
+          presenter: "Quebonafide, Beyonce, Black Eyed Peas",
+          duration: 1,
+          price:200,
+          abstract: `Spend one day with three the best artist on the World!`,
+          voters: []
         }
       ]
     }

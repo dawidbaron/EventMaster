@@ -5,7 +5,6 @@ export interface IEvent{
     name:string
     date: Date
     time: string
-    price: number
     imageUrl:string
     location?: {
         address: string
@@ -20,8 +19,8 @@ export interface ISession{
     id:number
     name:string 
     presenter: string
+    price: number
     duration: number
-    level: string 
     abstract: string 
     voters: string[]
 }

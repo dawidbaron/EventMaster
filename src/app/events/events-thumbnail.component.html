@@ -6,7 +6,6 @@
         <span *ngSwitchCase="'10:00 am'">(Late Start)</span>
         <span *ngSwitchDefault> (Normal Start)</span>
 </div>
-    <div>Price: {{event?.price}} zł</div>
     <div *ngIf="event?.location">Address: {{event?.location?.address}}</div>
     <div *ngIf="event?.location">Location: {{event?.location?.country}}, {{event?.location?.city}}  </div>
     <div *ngIf="event?.onlineUrl"> Online Url:{{event.onlineUrl}}</div>

@@ -18,21 +18,18 @@
         <em *ngIf="duration.invalid && duration.dirty">Required</em>
         <select formControlName="duration" class="form-control">
           <option value="">select duration...</option>
-          <option value="1">Half Hour</option>
+          <option value="1">45min</option>
           <option value="2">1 Hour</option>
-          <option value="3">Half Day</option>
-          <option value="4">Full Day</option>
+          <option value="3">1,5 Hour</option>
+          <option value="4">3 Hour</option>
+          <option value="5">Full Day</option>
         </select>
       </div>
-      <div class="form-group" [ngClass]="{'error':level.invalid && level.dirty}">
-        <label for="level">Level:</label>
-        <em *ngIf="level.invalid && level.dirty">Required</em>
-        <select formControlName="level" class="form-control">
-          <option value="">select level...</option>
-          <option value="Beginner">Beginner</option>
-          <option value="Intermediate">Intermediate</option>
-          <option value="Advanced">Advanced</option>
-        </select>
+      <div class="form-group" [ngClass]="{'error':price.invalid && price.dirty}">
+        <label for="price">Price:</label>
+        <em *ngIf="price.invalid && price.dirty">Required</em>
+        <input formControlName="price" id="sessionPrice" type="text" class="form-control" placeholder="session price..." />
+  
       </div>
       <div class="form-group" [ngClass]="{'error':abstract.invalid && abstract.dirty}">
         <label for="abstract">Abstract:</label>
@@ -42,6 +39,6 @@
         <textarea formControlName="abstract" id="abstract" rows=3 class="form-control" placeholder="abstract..."></textarea>
       </div>
       <button type="submit" [disabled]="newSessionForm.invalid" class="btn btn-primary">Save</button>
-      <button type="button" class="btn btn-default">Cancel</button>
+      <button type="button" (click)="cancel()"  class="btn btn-default">Cancel</button>
     </form>
   </div>
