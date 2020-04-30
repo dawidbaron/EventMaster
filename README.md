@@ -1,6 +1,7 @@
-# EventPlural
+# EventMaster
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This project I made for myself. It will be showing us all events in Poland like Online Tournaments or footbal matches.
+App write using Angular 9.1
 
 ## Development server
 
