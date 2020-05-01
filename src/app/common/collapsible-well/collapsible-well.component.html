@@ -1,4 +1,8 @@
 <div (click)="toggleContent()" class="well pointable">
-    <h4 class="well-title">{{title}}</h4>
-    <ng-content *ngIf="visible"></ng-content>
+    <h4 >
+        <ng-content select=".title"></ng-content>
+    </h4>
+    <!-- Ng Content - dla dowolnego contentu
+        select odwolujee sie do session-list jesli maja tam divy swoje clasy-->
+    <ng-content *ngIf="visible" select=".body"></ng-content>
 </div>
