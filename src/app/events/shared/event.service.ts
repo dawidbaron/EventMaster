@@ -43,7 +43,7 @@ const EVENTS:IEvent[] = [
           name: "All days 09-11/09/2020",
           presenter: "Martin Garrix, David Guetta, Meduza, Tyga, The Weekend, Hardwell,Travis Scott, Armin van Buuren, Afrojack",
           price: 500,
-          duration:3,
+          duration:6,
           abstract: `Spend the festival listening to all the performers and save the price! 
           There are competitions for this type of tickets!`,
           voters: ['bradgreen', 'igorminar', 'martinfowler']
@@ -52,7 +52,7 @@ const EVENTS:IEvent[] = [
           id: 2,
           name: "First Day 09/09/2020",
           presenter: "Martin Garrix, David Guetta, Meduza",
-          duration: 1,
+          duration: 5,
           price: 200,
           abstract: `Spend one day with three the best Dj-s on the World!`,
           voters: ['johnpapa', 'bradgreen', 'igorminar', 'martinfowler']
@@ -61,7 +61,7 @@ const EVENTS:IEvent[] = [
           id: 3,
           name: "Second Day 10/09/2020",
           presenter: "Tyga, The Weekend, Hardwell",
-          duration: 1,
+          duration: 5,
           price:200,
           abstract: `Spend one day with three the best Dj-s on the World!`,
           voters: []
@@ -70,7 +70,7 @@ const EVENTS:IEvent[] = [
           id: 4,
           name: "Third Day 11/09/2020",
           presenter: "Travis Scott, Armin van Buuren, Afrojack",
-          duration: 1,
+          duration: 5,
           price:200,
           abstract: `Spend one day with three the best Dj-s on the World!`,
           voters: []
@@ -89,7 +89,7 @@ const EVENTS:IEvent[] = [
           id: 1,
           name: "Maths",
           presenter: "Dawid Baron",
-          duration: 0.45,
+          duration: 1,
           price: 40,
           abstract: `Online Lessons with a teacher who has been teaching for 3 years, 
           studies information technology and loves children`,
@@ -99,7 +99,7 @@ const EVENTS:IEvent[] = [
           id: 2,
           name: "English",
           presenter: "Michael Brown",
-          duration: 1,
+          duration: 2,
           price: 50,
           abstract: `Online Lessons with a teacher who has been teaching for 5 years, 
           studies English on Oxford`,
@@ -109,7 +109,7 @@ const EVENTS:IEvent[] = [
           id: 3,
           name: "IT",
           presenter: "Patrick Yoka",
-          duration: 1.5,
+          duration: 3,
           price: 60,
           abstract: `Online Lessons with a teacher who has been teaching for 5 years, 
           studies IT on Cambridge.`,
@@ -119,7 +119,7 @@ const EVENTS:IEvent[] = [
           id: 4,
           name: "Music",
           presenter: "Lukas White",
-          duration: 1.5,
+          duration: 3,
           price: 80,
           abstract: `Online Lessons with a teacher who has been teaching for 8 years, 
           studied Music in Warsaw.`, 
@@ -143,7 +143,7 @@ const EVENTS:IEvent[] = [
           id: 1,
           name: "Zumba",
           presenter: "Kate Heron",
-          duration: 1,
+          duration: 2,
           price: 50,
           abstract: `Zumba dance that will make you lose weight in the blink of an eye. 
           A person with great experience will take care of your attitude!
@@ -154,7 +154,7 @@ const EVENTS:IEvent[] = [
           id: 2,
           name: "Grit Cardio",
           presenter: "Jamison Dance",
-          duration: 1.5,
+          duration: 3,
           price: 50,
           abstract: `Grit Cardio dance that will make you lose weight in the blink of an eye. 
           A person with great experience will take care of your attitude!
@@ -165,7 +165,7 @@ const EVENTS:IEvent[] = [
           id: 3,
           name: "Kick Boxing",
           presenter: "Bob Boxer",
-          duration:1,
+          duration:2,
           price: 60,
           abstract: `Kick Boxing dance that will make you lose weight in the blink of an eye. 
           A person with great experience will take care of your attitude!
@@ -176,7 +176,7 @@ const EVENTS:IEvent[] = [
           id: 4,
           name: "TBC & STRETCH",
           presenter: "Shai Reznik",
-          duration:1,
+          duration:2,
           price: 60,
           abstract: `TBC & STRETCH dance that will make you lose weight in the blink of an eye. 
           A person with great experience will take care of your attitude!
@@ -187,7 +187,7 @@ const EVENTS:IEvent[] = [
           id: 5,
           name: "Pilates",
           presenter: "Bruce Walters",
-          duration:1,
+          duration:3,
           price: 50,
           abstract: `Pilates dance that will make you lose weight in the blink of an eye. 
           A person with great experience will take care of your attitude!
@@ -213,7 +213,7 @@ const EVENTS:IEvent[] = [
           id: 1,
           name: "Metro",
           presenter: "Theatre Buffo",
-          duration: 1.5,
+          duration: 3,
           price:100,
           abstract: `„METRO”. Gdzieś między fikcją a rzeczywistością … 
           Uliczni grajkowie, śpiewacy i tancerze wystawiają na podziemnych peronach metra spektakl dla pasażerów. 
@@ -228,7 +228,7 @@ const EVENTS:IEvent[] = [
           id: 2,
           name: "Danse Macabre",
           presenter: "Theatre Roma",
-          duration: 2,
+          duration: 4,
           price:70,
           abstract: `„Danse Macabre”. Gdzieś między fikcją a rzeczywistością … 
           Uliczni grajkowie, śpiewacy i tancerze wystawiają na podziemnych peronach metra spektakl dla pasażerów. 
@@ -273,7 +273,7 @@ const EVENTS:IEvent[] = [
           name: "All days 2-4/7/2020",
           presenter: "Rihana, Beyonce, Tyga, The Weekend, Litlle Mix, Tymek, Quebonafide, Beyonce, Black Eyed Peas",
           price: 500,
-          duration:3,
+          duration:6,
           abstract: `Spend the festival listening to all the performers and save the price! 
           There are competitions for this type of tickets!`,
           voters: ['bradgreen', 'igorminar', 'martinfowler']
@@ -282,7 +282,7 @@ const EVENTS:IEvent[] = [
           id: 2,
           name: "First Day 02/09/2020",
           presenter: "Rihana, Beyonce, Tyga",
-          duration: 1,
+          duration: 4,
           price: 200,
           abstract: `Spend one day with three the best artist on the World!`,
           voters: ['johnpapa', 'bradgreen', 'igorminar', 'martinfowler']
@@ -291,7 +291,7 @@ const EVENTS:IEvent[] = [
           id: 3,
           name: "Second Day 03/09/2020",
           presenter: "The Weekend, Litlle Mix, Tymek,",
-          duration: 1,
+          duration: 4,
           price:200,
           abstract: `Spend one day with three the best artist on the World!`,
           voters: []
@@ -300,7 +300,7 @@ const EVENTS:IEvent[] = [
           id: 4,
           name: "Third Day 04/09/2020",
           presenter: "Quebonafide, Beyonce, Black Eyed Peas",
-          duration: 1,
+          duration:4,
           price:200,
           abstract: `Spend one day with three the best artist on the World!`,
           voters: []
