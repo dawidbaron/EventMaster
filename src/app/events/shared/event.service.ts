@@ -28,7 +28,7 @@ export class EventService {
 const EVENTS:IEvent[] = [
     {
       id: 1,
-      name: 'Tommorowland',
+      name: 'Guides',
       date: new Date ('09/09/2020'),
       time: '10:00 am',
       imageUrl: '/assets/Images/tommorowland.jpg',
@@ -79,15 +79,15 @@ const EVENTS:IEvent[] = [
     },
     {
       id: 2,
-      name: 'Online Lessons in LessonSchool',
+      name: 'Pro Players Tournament',
       date: new Date ('04/10/2020'),
       time: '9:00 am',
       imageUrl: '/assets/Images/e-learning.jpg',
-      onlineUrl:'http://lessonschool.org',
+      onlineUrl:'http://pptournament.org',
       sessions: [
         {
           id: 1,
-          name: "Maths",
+          name: "Fifa",
           presenter: "Dawid Baron",
           duration: 1,
           price: 40,
@@ -259,7 +259,7 @@ const EVENTS:IEvent[] = [
     {
       id: 5,
       name: 'Opener Festival',
-      date: new Date ('2/7/2020'),
+      date: new Date ('7/7 /2020'),
       time: '9:00 am',
       imageUrl: '/assets/Images/opner.jpg',
       location: {
