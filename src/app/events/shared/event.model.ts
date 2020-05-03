@@ -4,14 +4,13 @@ export interface IEvent{
     id:number
     name:string
     date: Date
-    time: string
     imageUrl:string
     location?: {
         address: string
         city:string
-        country:string
+        nazwa:string
     },
-    onlineUrl?:string,
+    platforms?:string
     sessions:ISession[]
 }
 
@@ -20,6 +19,8 @@ export interface ISession{
     name:string 
     presenter: string
     price: number
+    level: number
+    time: number
     duration: number
     abstract: string 
     voters: string[]

@@ -18,16 +18,44 @@
         <em *ngIf="duration.invalid && duration.dirty">Required</em>
         <select formControlName="duration" class="form-control">
           <option value="">select duration...</option>
-          <option value="1">45min</option>
-          <option value="2">1 Hour</option>
-          <option value="3">1,5 Hour</option>
-          <option value="4">3 Hour</option>
-          <option value="5">1 Day</option>
-          <option value="6">3 Days</option>
-          <option value="7">1 Week</option>
+          <option value="1">Every Monday</option>
+          <option value="2">Every Tuesday</option>
+          <option value="3">Every Wednesday</option>
+          <option value="4">Every Thursday</option>
+          <option value="5">Every Friday</option>
+          <option value="6">Every Saturday</option>
           
         </select>
       </div>
+      <div class="form-group" [ngClass]="{'error':time.invalid && time.dirty}">
+        <label for="time">Time:</label>
+        <em *ngIf="time.invalid && time.dirty">Required</em>
+        <select formControlName="time" class="form-control">
+          <option value="">select time...</option>
+          <option value="1">11:00-12:30</option>
+          <option value="2">12:30-14:00</option>
+          <option value="3">14:00-15:30</option>
+          <option value="4">15:30-17:00</option>
+          <option value="5">17:00-18:30</option>
+          <option value="6">18:30-20:00</option>
+          
+        </select>
+      </div>
+      <div class="form-group" [ngClass]="{'error':level.invalid && level.dirty}">
+        <label for="level">Level:</label>
+        <em *ngIf="level.invalid && level.dirty">Required</em>
+        <select formControlName="level" class="form-control">
+          <option value="">select level...</option>
+          <option value="1">Classes 1-4 - Primary School</option>
+          <option value="2">Classes 5-8 - Primary School</option>
+          <option value="3">High School - basic</option>
+          <option value="4">High School - extend</option>
+          <option value="5">Studies - basic</option>
+          <option value="6">Studies - extend</option>
+          
+        </select>
+      </div>
+      
       <div class="form-group" [ngClass]="{'error':price.invalid && price.dirty}">
         <label for="price">Price:</label>
         <em *ngIf="price.invalid && price.dirty">Required</em>

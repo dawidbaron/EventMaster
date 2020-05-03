@@ -7,7 +7,7 @@ import { IEvent } from './shared';
 declare let toastr
 @Component({
 template: `<div>
-<h1>What to see in Warsaw</h1>
+<h1>List off all lessons</h1>
 <hr/>
     <div class="row">
         <div *ngFor="let event of events" class="col-md-5">

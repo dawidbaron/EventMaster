@@ -10,13 +10,18 @@
     <div class="row">
       <div class="col-md-6">
         <div><strong>Date:</strong> {{event?.date |date}}</div>
-        <div><strong>Time:</strong> {{event?.time}}</div>
       </div>
       <div class="col-md-6">
         <address>
+          <div *ngIf="event?.location">
           <strong>Address:</strong><br />
           {{event?.location?.address}}<br />
-          {{event?.location?.city}}, {{event?.location?.country}}
+          {{event?.location?.city}}, {{event?.location?.nazwa}}
+        </div>
+        <div *ngIf="event?.platforms">
+          <strong>Platforms:</strong><br />
+          {{event.platforms}}<br />
+        </div>
         </address>
       </div>
     </div>
@@ -28,20 +33,19 @@
       <div class="col-md-7">
         <button class="btn btn-default" [class.active]="filterBy=='all'" 
         (click)="filterBy=='all'">All</button>
-        <button class="btn btn-default" [class.active]="filterBy=='45min'" 
-        (click)="filterBy=='45min'">45 min</button>
-        <button class="btn btn-default" [class.active]="filterBy=='1 Hour'" 
-        (click)="filterBy=='1 Hour'">1 Hour</button>
-        <button class="btn btn-default" [class.active]="filterBy=='1,5 Hour'" 
-        (click)="filterBy=='1,5 Hour'">1,5 Hour</button>
-        <button class="btn btn-default" [class.active]="filterBy=='3 Hour'" 
-        (click)="filterBy=='3 Hour'">3 Hour</button>
-        <button class="btn btn-default" [class.active]="filterBy=='1 Day'" 
-        (click)="filterBy=='1 Day'">1 Day</button>
-        <button class="btn btn-default" [class.active]="filterBy=='3 Days'" 
-        (click)="filterBy=='3 Days'">3 Days</button>
-        <button class="btn btn-default" [class.active]="filterBy=='1 Week'" 
-        (click)="filterBy=='1 Week'">1 Week</button>
+        <button class="btn btn-default" [class.active]="filterBy=='Classes 1-4 - Primary School'" 
+        (click)="filterBy=='Classes 1-4 - Primary School'">Classes 1-4 - Primary School</button>
+        <button class="btn btn-default" [class.active]="filterBy=='Classes 5-8 - Primary School'" 
+        (click)="filterBy=='Classes 5-8 - Primary School'">Classes 5-8 - Primary School</button>
+        <button class="btn btn-default" [class.active]="filterBy=='High School - basic'" 
+        (click)="filterBy=='High School - basic'">High School - basic</button>
+        <button class="btn btn-default" [class.active]="filterBy=='High School - extend'" 
+        (click)="filterBy=='High School - extend'">High School - extend</button>
+        <button class="btn btn-default" [class.active]="filterBy=='Studies - basic'" 
+        (click)="filterBy=='Studies - basic'">Studies - basic</button>
+        <button class="btn btn-default" [class.active]="filterBy=='Studies - extend'" 
+        (click)="filterBy=='Studies - extend'">Studies - extend</button>
+
       </div>
 
       <div class="col-md-2">

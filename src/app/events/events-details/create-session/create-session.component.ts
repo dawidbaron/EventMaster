@@ -14,6 +14,8 @@ export class CreateSessionComponent implements OnInit {
   presenter: FormControl
   duration: FormControl
   price: FormControl
+  level: FormControl
+  time: FormControl
   abstract: FormControl
   constructor() { }
 
@@ -22,16 +24,21 @@ export class CreateSessionComponent implements OnInit {
     this.presenter=new FormControl('', Validators.required)
     this.duration=new FormControl('', Validators.required)
     this.price=new FormControl('', Validators.required)
+    this.level=new FormControl('', Validators.required)
+    this.time=new FormControl('', Validators.required)
+    
     this.abstract=new FormControl('', [Validators.required,
-      Validators.maxLength(400),restrictedWords(['fuck','dick','BMP'])])
+      Validators.maxLength(400),restrictedWords(['fuck','dick','shit'])])
     
     this.newSessionForm=new FormGroup({
       name: this.name,
       presenter: this.presenter,
       duration: this.duration,
       price: this.price,
-      abstract: this.abstract,
-
+      level:this.level,
+      time:this.time,
+      abstract: this.abstract
+     
     })
     }
     
@@ -43,6 +50,8 @@ export class CreateSessionComponent implements OnInit {
       duration:+formValues.duration,
       presenter: formValues.presenter,
       abstract: formValues.abstract,
+      level: +formValues.level,
+      time: +formValues.time,
       voters:[]
     }
     this.saveNewSession.emit(session)

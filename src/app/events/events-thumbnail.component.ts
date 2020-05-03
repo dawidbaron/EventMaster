@@ -9,14 +9,14 @@ import { IEvent } from './shared';
 export class EventsThumbnailComponent{
    @Input() event:IEvent
 
-   getStartTimeClass(){
+  // getStartTimeClass(){
        //const isEarlyStart = this.event && this.event.time =='8:00 am';
       // return {green:isEarlyStart, bold:isEarlyStart} LUB
-      if(this.event && this.event.time == '8:00 am')
+    //  if(this.event && this.event.time == '8:00 am')
       
-      return ['green','bold']
-      return []
+    //  return ['green','bold']
+    //  return []
      // return {color: '#003300','font-weight':'bold'}
       //return {} BEZ STYLE NGSTYLE
-   }
+  // }
 }

@@ -3,13 +3,12 @@ import { Pipe, PipeTransform} from '@angular/core';
 export class DurationPipe implements PipeTransform{
     transform(value:number) :string{
         switch(value){
-            case 1: return '45min'
-            case 2: return '1 Hour'
-            case 3: return '1,5Hour'
-            case 4: return '3 Hour'
-            case 5: return '1 Day'
-            case 6: return '3 Days'
-            case 5: return '1 Week'
+            case 1: return 'Every Monday'
+            case 2: return 'Every Tuesday'
+            case 3: return 'Every Wednesday'
+            case 4: return 'Every Thursday'
+            case 5: return 'Every Friday'
+            case 6: return 'Every Saturday'
             
             default: return value.toString();
         }

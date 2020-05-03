@@ -9,7 +9,10 @@
         <div class="body">
           <h6>{{session.presenter}}</h6>
           <span>Duration: {{session.duration | duration}}</span><br />
+          <span>Time: {{session.time | time}}</span><br />
+          <span>Level: {{session.level | level}}</span><br />
           <span>Price: {{session.price|currency:'USD'}}</span>
+
           <p>{{session.abstract}}</p>
         </div>
         </collapsible-well>
