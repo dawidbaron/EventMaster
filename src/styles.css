@@ -1,6 +1,6 @@
 
 .hoverwell:hover {
-    background-color: #586e85;
+    background-color: #9bbd4d;
     cursor: pointer;
   }
   
@@ -13,7 +13,7 @@
   }
   
   button {
-    color: #555;
+    color: #2f96b4;
   }
   
   [hidden] {
