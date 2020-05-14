@@ -50,6 +50,6 @@ Project in progress
 ## Contact
 
 Dawid Baron || dawidbaron4@gmail.com
-[linkedin ](https://www.linkedin.com/in/dawid-baron-925a67183/)
-[github ](https://github.com/dawidbaron)
+* [github ](https://github.com/dawidbaron)
+* [linkedin ](https://www.linkedin.com/in/dawid-baron-925a67183/)
 
