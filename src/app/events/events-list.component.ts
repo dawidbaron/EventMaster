@@ -22,7 +22,7 @@ export class EventsListComponent implements OnInit{
   constructor(private eventService:EventService,private toastr: ToastrService,private route:ActivatedRoute )
   {
   }
-  // wyswietlanie listy eventow
+
   ngOnInit(){
     this.events=this.route.snapshot.data['events']
   }
