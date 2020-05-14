@@ -24,5 +24,5 @@ App was writen using Angular 9. In Future I want to connect it with my API using
 
 <a name="ss"></a>
 ## 3. Screenshoots
-./img/no.1.png
+(./img/no.1.png)
 
