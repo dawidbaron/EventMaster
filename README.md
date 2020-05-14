@@ -1,9 +1,21 @@
 # EventMaster
 
-This project I made for myself. It will be showing us all events in Poland like Online Tournaments or footbal matches.
-App write using Angular 9.1
+This project I made for myself. It simulates us virtual school. You can choose one subject and choosewith one off session you want to pick. There you have few levels for learning. So you just need to sign up for a course which you wanna and voi'la!
+App was writen using Angular 9. In Future I want to connect it with my API using Entity Framework and MVC model.
+## Content
+1. [ Description. ](#desc)
+2. [ Usage tips. ](#usage)
 
-## Development server
+<a name="desc"></a>
+## 1. Description
+
+sometext
+
+<a name="usage"></a>
+## 2. Usage tips
+
+sometext
+## Technologies
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
