@@ -4,7 +4,7 @@ This project I made for myself. It simulates us virtual school. You can choose o
 App was writen using Angular 9. In Future I want to connect it with my API using Entity Framework and MVC model.
 ## Content
 1. [ Description. ](#tech)
-2. [ Usage tips. ](#open)
+2. [ How to open. ](#open)
 3. [ Screenshoots. ](#ss)
 4. [ Main Features. ](#main)
 
