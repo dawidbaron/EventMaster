@@ -6,6 +6,7 @@ App was writen using Angular 9. In Future I want to connect it with my API using
 1. [ Description. ](#tech)
 2. [ Usage tips. ](#open)
 3. [ Screenshoots. ](#ss)
+4. [ Main Features. ](#main)
 
 
 <a name="tech"></a>
@@ -24,6 +25,7 @@ App was writen using Angular 9. In Future I want to connect it with my API using
 
 <a name="ss"></a>
 ## 3. Screenshoots
+
 First look at app
 ![ss](./ss/no.1.PNG)
 Details about one subject
@@ -35,4 +37,9 @@ You can login into this.
 And also you can add a new session.
 ![ss](./ss/no.5.PNG)
 
+## 4. Main Features
+* Capabilities to sign into a lessons
+* Adding a new subject 
+* Adding a new session
+* Ability to login like admin or like normal user
 
