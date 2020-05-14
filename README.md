@@ -7,7 +7,10 @@ App was writen using Angular 9. In Future I want to connect it with my API using
 2. [ Usage tips. ](#usage)
 
 <a name="desc"></a>
-## 1. Description
+## 1. Technologies:
+* Angular 9
+* JavaScript
+* TypeScript
 
 sometext
 
