@@ -3,26 +3,27 @@
 This project I made for myself. It simulates us virtual school. You can choose one subject and choosewith one off session you want to pick. There you have few levels for learning. So you just need to sign up for a course which you wanna and voi'la!
 App was writen using Angular 9. In Future I want to connect it with my API using Entity Framework and MVC model.
 ## Content
-1. [ Description. ](#desc)
-2. [ Usage tips. ](#usage)
+1. [ Description. ](#tech)
+2. [ Usage tips. ](#open)
+3. [ Screenshoots. ](#ss)
 
-<a name="desc"></a>
+
+<a name="tech"></a>
 ## 1. Technologies:
+
 * Angular 9
 * JavaScript
 * TypeScript
 
-sometext
+<a name="open"></a>
+## 2. How to open a project?
 
-<a name="usage"></a>
-## 2. Usage tips
+* First thing you need to do is downolad Angular Cli and newest version of node.js from https://nodejs.org/en/.
+* Next install npm server
+* Last thing go into catalog with app and use ng serve --open
 
-sometext
-## Technologies
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
+<a name="ss"></a>
+## 3. Screenshoots
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
