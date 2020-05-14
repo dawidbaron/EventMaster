@@ -15,6 +15,8 @@ App was writen using Angular 9. In Future I want to connect it with my API using
 * Angular 9
 * JavaScript
 * TypeScript
+* HTML5
+* CSS3
 
 <a name="open"></a>
 ## 2. How to open a project?
@@ -36,10 +38,18 @@ You can login into this.
 ![ss](./ss/no.4.PNG)
 And also you can add a new session.
 ![ss](./ss/no.5.PNG)
-
+<a name="main"></a>
 ## 4. Main Features
 * Capabilities to sign into a lessons
 * Adding a new subject 
 * Adding a new session
 * Ability to login like admin or like normal user
+## Status
+Project in progress
+
+## Contact
+
+Dawid Baron || dawidbaron4@gmail.com
+[linkedin ](https://www.linkedin.com/in/dawid-baron-925a67183/)
+[github ](https://github.com/dawidbaron)
 
