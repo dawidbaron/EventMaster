@@ -3,7 +3,7 @@
 This project I made for myself. It simulates us virtual school. You can choose one subject and choosewith one off session you want to pick. There you have few levels for learning. So you just need to sign up for a course which you wanna and voi'la!
 App was writen using Angular 9. In Future I want to connect it with my API using Entity Framework and MVC model.
 ## Content
-1. [ Description. ](#tech)
+1. [ Technologies. ](#tech)
 2. [ How to open. ](#open)
 3. [ Screenshoots. ](#ss)
 4. [ Main Features. ](#main)
